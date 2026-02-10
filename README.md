@@ -50,3 +50,13 @@ setup:
 9. Have pydantic -> data validation convert data from server to json
 10. models.py -> holds data or represents data
 11. BaseModel of pydantic helps in data validation. for example the price of a product can not be negative number so BaseModel ensures This
+12. If we want good UI to test our endpoints we need SWAGGER. but with fastapi we already have it preinstalled. just go to localhost:8000/docs
+13. When using post we can't do it on the normal server web application. We can either use swagger or a frontend
+14. Save the data inside the database. We will use postgresql
+15. We need to go with SQLAlchemy -> provides Object Relational Mapper -> we connect the object and the sql table where we connect the data or map the data hence also called ORM
+16. When we will want to save the data inside a db, we take object then write SQL query and we add the value using sql queries
+17. To automate the sql query writting we use SQLAlchemy
+18. We need driver for DB
+19. We write this code in env: pip3 install sqlalchemy psycopg3 
+20. Create database.py and create session local -> Connect to a server then it's a session
+21. We create model for database storage
